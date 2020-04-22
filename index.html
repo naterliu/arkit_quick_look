@@ -2,15 +2,78 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>AR Library</title>
+		<title>己墨科技-Web AR互动</title>
+		<style>
+			.parentDiv{
+				width:100%;
+				background-color: #66666666;
+			}
+			h1{
+				font-size: 45px;
+				text-align: center;
+			}
+			.previewImg{
+				width: 33.05%;
+			}
+		</style>
 	</head>
-	<body>
-		<h1>Welcome to the AR Library</h1>
-		<p>Welcome to the AR Library website. I created this website in order to view AR objects from the web on my device running iOS 12.
-		Conincidentally, this is the first time I made a website with HTML! It's a lot of fun!</p>
+	<body style="margin:0">
+		<h1>Web AR模型库！快来体验一下吧！</h1>
+		<h1>by 己墨科技</h1>
+		<div class="parentDiv">
+			<a href="res/biplane.usdz#allowsContentScaling=1&canonicalWebPageURL=https://www.jimotech.com" rel="ar">
+				<img src="res/biplane_2x.jpg" class="previewImg"></img>
+			</a>
+			<a href="res/cup_saucer.usdz#canonicalWebPageURL=https://www.163.com" rel="ar">
+				<img src="res/cup_saucer_2x.jpg" class="previewImg"></img>
+			</a>
+			<a href="res/flower_tulip.usdz" rel="ar">
+				<img src="res/flower_tulip_2x.jpg" class="previewImg"></img>
+			</a>
+			<a href="res/gramophone.usdz" rel="ar">
+				<img src="res/gramophone_2x.jpg" class="previewImg"></img>
+			</a>
+			<a href="res/pot_plant.usdz" rel="ar">
+				<img src="res/pot_plant_2x.jpg" class="previewImg"></img>
+			</a>
+			<a href="res/redchair.usdz" rel="ar">
+				<img src="res/redchair_2x.jpg" class="previewImg"></img>
+			</a>
+			<a href="res/retro_tv.usdz" rel="ar">
+				<img src="res/retro_tv_2x.jpg" class="previewImg"></img>
+			</a>
+			<a href="res/stratocaster.usdz" rel="ar">
+				<img src="res/stratocaster_2x.jpg" class="previewImg"></img>
+			</a>
+			<a href="res/teapot.usdz" rel="ar">
+				<img src="res/teapot_2x.jpg" class="previewImg"></img>
+			</a>
+			<a href="res/toy_car.usdz" rel="ar">
+				<img src="res/toy_car_2x.jpg" class="previewImg"></img>
+			</a>
+			<a href="res/toy_drummer.usdz" rel="ar">
+				<img src="res/toy_drummer_2x.jpg" class="previewImg"></img>
+			</a>
+			<a href="res/trowel.usdz" rel="ar">
+				<img src="res/trowel_2x.jpg" class="previewImg"></img>
+			</a>
+			<a href="res/vintage_robot.usdz" rel="ar">
+				<img src="res/vintage_robot_2x.jpg" class="previewImg"></img>
+			</a>
+			<a href="res/wateringcan.usdz" rel="ar">
+				<img src="res/wateringcan_2x.jpg" class="previewImg"></img>
+			</a>
+			<a href="res/wheelbarrow_.usdz" rel="ar">
+				<img src="res/wheelbarrow_2x.jpg" class="previewImg"></img>
+			</a>
+		</div>
 		
-		<a href="res/toy_car.usdz" rel="ar">
-			<img src="res/toycar_2x.jpg" width="500px"></img>
-		</a>
 	</body>
+	<script>
+		aleart("test");
+		const a = document.createElement("a");
+		if (a.relList.supports("ar")) {
+		  // AR is available.
+		}
+	</script>
 </html>
